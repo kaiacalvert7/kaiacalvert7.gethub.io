@@ -1,0 +1,86 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography and Background */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url('images/pink_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+}
+
+/* Layout */
+main {
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid #ccc;
+}
+
+/* Button */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode nav ul li a {
+  color: #80dfff;
+}
